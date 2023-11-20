@@ -1,4 +1,5 @@
 import * as React from "react";
+import { NavLink } from 'react-router-dom';
 
 //assets
 import arrow_icon from '../assets/icons/arrow_icon.png';
@@ -83,6 +84,7 @@ function Offer() {
                 <div className="div-21">
                   Selecciona tu metodo de págo y viaja ahora!!!
                 </div>
+                <NavLink to="/paymethod" className="nv">
                 <div className="div-22">
                   <img
                     loading="lazy"
@@ -91,6 +93,8 @@ function Offer() {
                   />
                   <div className="div-23">MasterCard</div>
                 </div>
+                </NavLink>
+                <NavLink to="/paymethod" className="nv">
                 <div className="div-24">
                   <img
                     loading="lazy"
@@ -99,6 +103,8 @@ function Offer() {
                   />
                   <div className="div-25">Paypal</div>
                 </div>
+                </NavLink>
+                <NavLink to="/paymethod" className="nv">
                 <div className="div-26">
                   <img
                     loading="lazy"
@@ -107,17 +113,22 @@ function Offer() {
                   />
                   <div className="div-27">Targeta VISA</div>
                 </div>
+                </NavLink>
               </div>
             </div>
           </div>
         </div>
       </div>
       <style jsx>{`
+        .nv {
+          text-decoration:none;
+        }
+
         .div {
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding: 10vh 10vw 10vh 10vw;
+          padding: 5vh 10vw 5vh 10vw;
         }
         .div-2 {
           color: var(--gray-shades-black, #000);
@@ -187,7 +198,7 @@ function Offer() {
           white-space: nowrap;
           font: 400 32px/35px Louis George Cafe, -apple-system, Roboto,
             Helvetica, sans-serif;
-          padding: 10vh 0 0 0;
+          padding: 5vh 0 0 0;
         }
         @media (max-width: 991px) {
           .div-6 {
@@ -241,7 +252,7 @@ function Offer() {
           white-space: nowrap;
           font: 400 32px/35px Louis George Cafe, -apple-system, Roboto,
             Helvetica, sans-serif;
-          padding: 10vh 0 5vh 0;
+          padding: 5vh 0 5vh 0;
         }
         @media (max-width: 991px) {
           .div-8 {

@@ -1,4 +1,7 @@
 import * as React from "react";
+import { NavLink } from 'react-router-dom';
+
+//assets
 import arrow_icon from '../assets/icons/arrow_icon.png';
 import arrow_icon_r from '../assets/icons/arrow_icon_r.png';
 
@@ -63,15 +66,24 @@ function Paymethod() {
                 <div className="div-31">
                   ¿Listo para comenzar con el viaje de tu vida?
                 </div>
-                <div className="div-32">Continuar y finalizar pago</div>
-                <div className="div-33">Cancelar operación</div>
-                <div className="div-34">¿Problema en reservación?</div>
+                <NavLink to="/" className="div-32">
+                <div >Continuar y finalizar pago</div>
+                </NavLink>
+                <NavLink to="/" className="div-32">
+                <div>Cancelar operación</div>
+                </NavLink>
+                <NavLink to="/" className="div-32">
+                <div>¿Problema en reservación?</div>
+                </NavLink>
               </div>
             </div>
           </div>
         </div>
       </div>
       <style jsx>{`
+        .nl{
+          width: auto;
+        }
         .div {
           display: flex;
           flex-direction: column;
@@ -458,9 +470,12 @@ function Paymethod() {
           background-color: var(--primary-colors-color-4, #f4f4f4);
           align-self: stretch;
           margin-top: 24px;
+          margin-left: 24px;
+          margin-right: 24px;
           padding: 16px 20px;
           font: 400 24px/26px Louis George Cafe, -apple-system, Roboto,
             Helvetica, sans-serif;
+          text-decoration: none;
         }
         @media (max-width: 991px) {
           .div-32 {

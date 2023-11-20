@@ -1,4 +1,5 @@
 import * as React from "react";
+import { NavLink } from 'react-router-dom';
 
 //assets
 import email_icon from '../assets/icons/email_icon.png';
@@ -27,6 +28,7 @@ const Login = () => {
             <div className="div-16" />
             <div className="div-17">
               <div className="div-18">Bienvenido a VoyageLux</div>
+              <NavLink to="/" className="nv">
               <div className="div-19">
                 <img
                   loading="lazy"
@@ -35,6 +37,8 @@ const Login = () => {
                 />
                 <div className="div-20">Acceder con Correo</div>
               </div>
+              </NavLink>
+              <NavLink to="/" className="nv">
               <div className="div-21">
                 <img
                   loading="lazy"
@@ -43,6 +47,8 @@ const Login = () => {
                 />
                 <div className="div-22">Acceder con Facebook</div>
               </div>
+              </NavLink>
+              <NavLink to="/" className="nv">
               <div className="div-23">
                 <img
                   loading="lazy"
@@ -51,12 +57,16 @@ const Login = () => {
                 />
                 <div className="div-24">Acceder con Google</div>
               </div>
+              </NavLink>
               <div className="div-25">Terminos y condiciones</div>
             </div>
           </div>
         </div>
       </div>
       <style jsx>{`
+        .nv{
+          text-decoration:none;
+        }
         .div {
           justify-content: center;
           align-items: center;
@@ -84,7 +94,7 @@ const Login = () => {
           display: flex;
           width: 1176px;
           gap: 10px;
-          margin: 30px 0;
+          margin: 10vh 0 10vh 0;
           padding: 32px 32px 32px 48px;
         }
         @media (max-width: 991px) {
@@ -252,7 +262,7 @@ const Login = () => {
           max-width: 100%;
           justify-content: space-between;
           gap: 20px;
-          padding: 17px 80px 17px 24px;
+          padding: 17px 55px 17px 24px;
         }
         @media (max-width: 991px) {
           .div-23 {
