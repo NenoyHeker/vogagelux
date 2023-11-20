@@ -7,7 +7,6 @@ import Footer from "./components/footer";
 
 
 import Welcome from "./components/welcome";
-
 import Login from "./components/login";
 import Offer from "./components/offer";
 import Paymethod from "./components/paymethod";

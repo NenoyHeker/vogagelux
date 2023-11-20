@@ -1,5 +1,11 @@
 import * as React from "react";
 
+//assets
+import email_icon from '../assets/icons/email_icon.png';
+import face_icon from '../assets/icons/face_icon.png';
+import g_icon from '../assets/icons/g_icon.png';
+import b_login from '../assets/images/b_login.png';
+
 const Login = () => {
   return (
     <>
@@ -14,7 +20,7 @@ const Login = () => {
               <div className="div-15">Viaja con promociones increibles</div>
               <img
                 loading="lazy"
-                srcSet="..."
+                src={b_login}
                 className="img-4"
               />
             </div>
@@ -24,15 +30,15 @@ const Login = () => {
               <div className="div-19">
                 <img
                   loading="lazy"
-                  srcSet="..."
+                  src={email_icon}
                   className="img-5"
                 />
-                <div className="div-20">Acceder con Facebook</div>
+                <div className="div-20">Acceder con Correo</div>
               </div>
               <div className="div-21">
                 <img
                   loading="lazy"
-                  srcSet="..."
+                  src={face_icon}
                   className="img-6"
                 />
                 <div className="div-22">Acceder con Facebook</div>
@@ -40,7 +46,7 @@ const Login = () => {
               <div className="div-23">
                 <img
                   loading="lazy"
-                  srcSet="..."
+                  src={g_icon}
                   className="img-7"
                 />
                 <div className="div-24">Acceder con Google</div>
